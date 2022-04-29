@@ -8,6 +8,10 @@ EXTRA_DIST = \
 AM_CPPFLAGS = -I.. -I$(top_srcdir) -I$(top_srcdir)/lib -I$(top_builddir)/lib
 DEFS = @DEFS@ $(LOCAL_OPTS) -DSYSCONFDIR=\"$(sysconfdir)/\"
 
+CFLAGS=-fprofile-arcs -ftest-coverage
+LDFLAGS=-lgcov
+
+
 if BGPD
 TESTS_BGPD = aspathtest testbgpcap ecommtest testbgpmpattr testbgpmpath
 else
