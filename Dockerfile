@@ -18,3 +18,4 @@ RUN useradd quagga &&\
     touch zebra.pid ospfd.pid ripd.pid bgpd.pid &&\
     chmod 777 zebra.pid ospfd.pid ripd.pid bgpd.pid &&\
     cd /
+EXPOSE 2601
