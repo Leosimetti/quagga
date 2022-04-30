@@ -48,6 +48,14 @@ Package: libc-ares-dev
 Version: 1.15.0-1ubuntu0.1
 ```
 
+* > `awk`
+(can be installed via `sudo apt install gawk`)
+
+```
+Package: gawk
+Version: 1:5.0.1+dfsg-1
+```
+
 ## Compiling Tests
 * > `dejagnu`
 
